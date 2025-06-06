@@ -199,7 +199,7 @@ export type HostedMCPTool = HostedTool & {
     type: 'mcp';
     serverLabel: string;
     serverUrl: string;
-    requireApproval?: 'never' | 'once' | 'always';
+    requireApproval?: 'never' | 'always';
   };
 };
 
@@ -213,7 +213,7 @@ export type HostedMCPTool = HostedTool & {
 export function hostedMcpTool(options: {
   serverLabel: string;
   serverUrl: string;
-  requireApproval?: 'never' | 'once' | 'always';
+  requireApproval?: 'never' | 'always';
 }): HostedMCPTool {
   return {
     type: 'hosted_tool',
